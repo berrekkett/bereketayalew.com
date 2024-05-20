@@ -11,8 +11,6 @@ A simple PHP-based issue tracking system that allows users to register, login, c
 - [Project Structure](#project-structure)
 - [Database Schema](#database-schema)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
