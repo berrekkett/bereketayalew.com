@@ -149,10 +149,14 @@ issue-tracking/
 
 ![Login Page]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/9030409e-5599-4f82-8b40-50aa2e9e2839)
 
-![Register Page](screenshots/register.png)
-![Create Issue](screenshots/create_issue.png)
-![View Issues](screenshots/view_issues.png)
-![Update Issue](screenshots/update_issue.png)
+![Register Page]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/8212acf8-29bc-4eda-b904-d6b8f062dbdb)
+
+![Create Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/62ad3b1e-ef01-40ca-a453-89b437269b2c)
+
+![View Issues]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2021fb0f-d3ca-49ad-bb64-d06dbe0d050b)
+
+![Update Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2c0e7963-ccba-4367-b902-84ee083626fd)
+
 
 ## Contributing
 
@@ -167,5 +171,3 @@ issue-tracking/
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-This `README.md` file provides a comprehensive guide to set up and use the Issue Tracking System. It includes installation steps, usage instructions, and an overview of the project structure and database schema. Adjust the screenshots section with actual screenshots after setting up your application, and replace the placeholders with your actual repository information.
