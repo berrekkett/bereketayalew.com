@@ -158,18 +158,3 @@ issue-tracking/
 [View Issues]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2021fb0f-d3ca-49ad-bb64-d06dbe0d050b)
 
 [Update Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2c0e7963-ccba-4367-b902-84ee083626fd)
-
-
-## Contributing
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
