@@ -156,3 +156,6 @@ issue-tracking/
 [View Issues]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2021fb0f-d3ca-49ad-bb64-d06dbe0d050b)
 
 [Update Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2c0e7963-ccba-4367-b902-84ee083626fd)
+
+![image](https://github.com/alvin0999/issue-tracking-system/assets/141323723/abcb0808-c28b-4260-bb10-b8796d369d43)
+
