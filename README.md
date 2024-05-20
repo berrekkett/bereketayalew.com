@@ -147,7 +147,8 @@ issue-tracking/
 
 ## Screenshots
 
-![Login Page](screenshots/login.png)
+![Login Page]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/9030409e-5599-4f82-8b40-50aa2e9e2839)
+
 ![Register Page](screenshots/register.png)
 ![Create Issue](screenshots/create_issue.png)
 ![View Issues](screenshots/view_issues.png)
