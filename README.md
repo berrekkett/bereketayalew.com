@@ -1,7 +1,3 @@
-Sure, here's a detailed `README.md` file for your project:
-
----
-
 # Issue Tracking System
 
 A simple PHP-based issue tracking system that allows users to register, login, create issues, view issues, and update the status of issues. This project demonstrates basic CRUD operations and user authentication.
@@ -50,7 +46,7 @@ A simple PHP-based issue tracking system that allows users to register, login, c
 
     CREATE TABLE users (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        username VARCHAR(50) NOT NULL,
+        username VARCHAR(50) NOT NULL UNIQUE,
         password VARCHAR(255) NOT NULL
     );
 
