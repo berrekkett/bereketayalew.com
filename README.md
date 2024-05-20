@@ -147,15 +147,17 @@ issue-tracking/
 
 ## Screenshots
 
-![Login Page]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/9030409e-5599-4f82-8b40-50aa2e9e2839)
+[Login Page]![image](https://github.com/alvin0999/issue-tracking-system/assets/141323723/6d1897c8-1851-4726-94c9-20e75cd5cb3e)
 
-![Register Page]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/8212acf8-29bc-4eda-b904-d6b8f062dbdb)
 
-![Create Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/62ad3b1e-ef01-40ca-a453-89b437269b2c)
+[Register Page]![image](https://github.com/alvin0999/issue-tracking-system/assets/141323723/6d0c65c8-8322-4ce7-86cd-04b4577c3e52)
 
-![View Issues]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2021fb0f-d3ca-49ad-bb64-d06dbe0d050b)
 
-![Update Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2c0e7963-ccba-4367-b902-84ee083626fd)
+[Create Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/62ad3b1e-ef01-40ca-a453-89b437269b2c)
+
+[View Issues]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2021fb0f-d3ca-49ad-bb64-d06dbe0d050b)
+
+[Update Issue]![image](https://github.com/alvin0999/issue_tracker/assets/141323723/2c0e7963-ccba-4367-b902-84ee083626fd)
 
 
 ## Contributing
