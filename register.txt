@@ -1,0 +1,70 @@
+Certainly! Below is a simple PHP registration page script that takes a user's full name, email, username, and password. After submitting the form, it sends an email verification link to the user's email address to approve the registration.
+
+<?php
+// Define variables for database connection (adjust these with your own settings)
+$servername = "localhost";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_dbname";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+// Function to generate a random token
+function generateToken() {
+return bin2hex(random_bytes(50));
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Collect value of input field
+$fullName = $_POST['fullname'];
+$email = $_POST['email'];
+$username = $_POST['username'];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash the password
+$token = generateToken(); // Generate a unique token
+
+// SQL to insert new user
+$sql = "INSERT INTO users (fullname, email, username, password, token) VALUES (?, ?, ?, ?, ?)";
+
+// Prepare and bind
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sssss", $fullName, $email, $username, $password, $token);
+
+// Execute and check
+if ($stmt->execute()) {
+// Send verification email
+$to = $email;
+$subject = "Email Verification";
+$message = "Please click on the link below to verify your email address:\n\nhttp://yourwebsite.com/verify.php?token=" . $token;
+$headers = "From: webmaster@yourwebsite.com";
+
+if (mail($to, $subject, $message, $headers)) {
+echo "Registration successful! Please check your email to verify your account.";
+} else {
+echo "Email could not be sent. Please try again.";
+}
+} else {
+echo "Error: " . $stmt->error;
+}
+
+$stmt->close();
+}
+$conn->close();
+?>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+Full Name: <input type="text" name="fullname">
+Email: <input type="email" name="email">
+Username: <input type="text" name="username">
+Password: <input type="password" name="password">
+<input type="submit">
+</form>
+
+Please note that you'll need to replace your_username, your_password, your_dbname, and http://yourwebsite.com/verify.php with your actual database details and verification page URL. Also, ensure that your server is configured to send emails using the mail() function.
+
+Remember to create a corresponding verify.php script that will handle the verification of the token received by the user's email. This script should update the user's status in the database to indicate that their email has been verified. If you need assistance with that script as well, feel free to ask!

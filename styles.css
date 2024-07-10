@@ -1,21 +1,32 @@
 /* Enhanced CSS styles for a professional and colorful UI */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #444;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333 ;
+    color: #ecaf07;
     padding: 20px 0;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
 }
+
 
 header h1 {
     margin: 0;
+    font-size: 24px;
 }
 
 nav a {
@@ -23,6 +34,7 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -32,10 +44,14 @@ nav a:hover {
 
 main {
     padding: 20px;
+    flex: 1;
+    margin-top: 80px; /* Adjust this value to match the height of the header */
 }
 
 h2 {
     color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 form {
@@ -45,12 +61,13 @@ form {
 input, textarea, select {
     display: block;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     max-width: 400px;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s ease;
+    font-size: 14px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -59,23 +76,31 @@ input:focus, textarea:focus, select:focus {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #555; /* Change background color on hover */
 }
 
+.table-container {
+    width: 100%;
+    overflow-y: auto; /* Scrollable table */
+    max-height: 400px; /* Adjust as needed */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    font-size: 14px;
 }
 
 table, th, td {
@@ -83,7 +108,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     text-align: left;
 }
 
@@ -101,11 +126,12 @@ a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ecaf07;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0; /* Make footer smaller */
+    width: 100%;
+    font-size: 12px; /* Make footer smaller */
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
